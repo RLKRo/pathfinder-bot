@@ -25,10 +25,6 @@ updater = Updater(tokens.telegram_token)
 
 def roll(update: Update, context: CallbackContext):
 	try:
-		# message = update.message.text.split(' ', 1)[1].replace(' ', '')
-		# for char in message:
-		# 	if char == 'd'
-		#
 		logging.info(f'Roll from {update.message.from_user}')
 		message = update.message.text.split(' ', 1)[1].replace(' ', '')
 		queries = message.split('+')
